@@ -28,7 +28,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/17a4252f94fe87968ce2b-82b279d701b12dca5e.jpg https://graph.org/file/61b553c54139d0175fca1-88ee3fac5f8b34aee6.jpg https://graph.org/file/e90a7b2b6412fcb0bf48d-24f45b8d1a37ebbfef.jpg')).split()  # Sample pic
+PICS = (environ.get('PICS', 'https://graph.org/file/ea8b0b657486e5b6421ad-44c02c1574bad4c61d.jpg https://graph.org/file/d77876e8b16642671df82-02cdbb7a6af8c892f6.jpg')).split()  # Sample pic
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/17a4252f94fe87968ce2b-82b279d701b12dca5e.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/13702ae26fb05df52667c.jpg")
@@ -39,7 +39,7 @@ FSUB_PICS = (environ.get('FSUB_PICS', 'https://graph.org/file/7478ff3eac37f4329c
 # Admin, Channels & Users Configuration
 # ============================
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6964203412').split()] # Replace with the actual admin ID(s) to add
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '--1002153653982 -1002627121670 -1002623667730').split()]  # Channel id for auto indexing (make sure bot is admin)
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002153653982 -1002627121670 -1002623667730').split()]  # Channel id for auto indexing (make sure bot is admin)
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002583655280'))  # Log channel id (make sure bot is admin)
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002635477308'))  # Bin channel id (make sure bot is admin)
 DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1002583655280'))  # Notification of those who verify will be sent to your channel
@@ -61,7 +61,7 @@ OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'moviehub4uofficial0@okicici')
 # ============================
 # MongoDB Configuration
 # ============================
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://koshtiharshi2006:V4cahp4qJ5UEOITf@cluster0.g6rav6o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://koshtiharshil006:qqiqa19UPTnyMJ4E@cluster0.hkshh8k.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://Narutoautofilter:the_bad_devil_06@cluster0.glzywkd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Deendayal_files')
@@ -138,7 +138,7 @@ EMOJI_MODE = bool(environ.get('EMOJI_MODE', False))  # Emoji status On (True) / 
 # ============================
 # Bot Configuration
 # ============================
-auth_grp = environ.get('AUTH_GROUP')
+auth_grp = environ.get('-1002519776056')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
